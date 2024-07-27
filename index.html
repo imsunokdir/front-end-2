@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form>
+        <div class="email-div input-div">
+          <input
+            type="email"
+            id="email"
+            placeholder="example@email.com"
+            onchange="handleEmail(event)"
+          />
+          <p id="email-message"></p>
+        </div>
+
+        <div class="password-div input-div">
+          <input
+            type="password"
+            id="password"
+            placeholder="password"
+            onchange="handlePassword(event)"
+          />
+          <p id="password-message"></p>
+        </div>
+        <div class="success-div">
+          <p id="success"></p>
+        </div>
+
+        <button type="submit" class="submit" onclick="showConfirmation(event)">
+          Submit
+        </button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
